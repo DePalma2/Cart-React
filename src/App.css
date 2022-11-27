@@ -1,0 +1,313 @@
+/* ==========================================================================
+ESTILOS GLOBALES
+========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==========================================================================
+ESTILOS SCROLL BAR
+========================================================================== */
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: #413e3e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555252;
+  border-radius: .5rem;
+}
+
+/* ==========================================================================
+ESTILOS COMPONENTE PAGE CARD
+========================================================================== */
+
+.card-page-producto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid transparent;
+  border-radius: 0;
+}
+
+.card-page-producto .card-subtitle {
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #8898aa;
+}
+
+.table-product.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f3f8fa !important
+}
+
+.table-product td {
+  border-top: 0px solid #dee2e6 !important;
+  color: #728299 !important;
+}
+
+/* ==========================================================================
+ESTILOS COMPONENTE HEADER 
+========================================================================== */
+
+.parallax-header {
+  background-image: url(./assets/resources/img/heero.jpg);
+  height: 500px;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.parallax-header h1 {
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  letter-spacing: 1px;
+}
+
+
+.parallax-header h2 {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  letter-spacing: 1px;
+}
+
+
+/* ==========================================================================
+ESTILO CARD PRODUCTO
+========================================================================== */
+
+.card-producto {
+  transition: all .1s ease;
+}
+
+.card-producto:hover {
+  border: 1px solid black;
+}
+
+
+
+
+
+/* ==========================================================================
+BOTON COMPRAR CARD
+========================================================================== */
+
+
+.btn-shop {
+  border: none;
+  background: none;
+}
+
+.btn-shop span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.btn-shop svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.btn-shop:hover svg {
+  transform: translateX(0);
+}
+
+.btn-shop:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.btn-shop:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* ==========================================================================
+COMPONENTE TESTIMONIO
+========================================================================== */
+
+
+.testimonials {
+  color:#313437;
+  
+}
+
+.testimonials p {
+  color:#7d8285;
+}
+
+.testimonials h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+
+.testimonials .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.testimonials .intro p {
+  margin-bottom:0;
+}
+
+.testimonials .people {
+  padding:50px 0 20px;
+}
+
+.testimonials .item {
+  margin-bottom:32px;
+}
+
+
+.testimonials .item .box {
+  padding:30px;
+  background-color:#fff;
+  position:relative;
+}
+
+.testimonials .item .box:after {
+  content:'';
+  position:absolute;
+  left:30px;
+  bottom:-24px;
+  width:0;
+  height:0;
+  border:15px solid transparent;
+  border-width:12px 15px;
+  border-top-color:#fff;
+}
+
+.testimonials .item .user {
+  margin-top:28px;
+  padding-left:25px;
+}
+
+.testimonials .item .name {
+  font-weight:bold;
+  margin-bottom:2px;
+  color:inherit;
+}
+
+.testimonials .item .title {
+  font-size:13px;
+  color:#9da9ae;
+}
+
+.testimonials .item .description {
+  font-size:15px;
+  margin-bottom:0;
+}
+
+.testimonials .item img {
+  max-width:40px;
+  float:left;
+  margin-right:12px;
+  margin-top:-5px;
+}
+
+@media (max-width:767px) {
+  .testimonials h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+@media (min-width:768px) {
+  .testimonials .item {
+    height:220px;
+  }
+}
+
+/* ==========================================================================
+COMPONENTE HOME
+========================================================================== */
+
+.home { 
+  margin: 30px;
+  display: grid;
+}
+
+.home-container { 
+  display: grid;
+  align-content: center;
+  row-gap: 2.5rem;
+}
+
+.home-data {
+  text-align: center;
+}
+
+.home-data  .home-subtitle { 
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.home-data  .home-title { 
+  font-size: 38px;
+  margin: 0.75rem 0;
+}
+
+.home-data .home-description{
+  font-size: 18px;
+}
+
+.home-data h3 {
+  font-size: 24px;
+}
+
+
+
+
+
