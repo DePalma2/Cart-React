@@ -1,7 +1,8 @@
 # Proyecto Integrador React UTN
 
-
-
+## Detalles
+-------------
+En este proyecto podrán agregar productos a un carrito de compras, agregar mas cantidad de productos o disminuirlos también pueden eliminarlos, dentro del menú encontraran una sección de contacto donde podrán enviar mensajes estos se programaron para que solo se vean por consola lo mismo pasa con el checkout de los productos que se encuentra en la sección del carrito.
 
 ## Tecnologias usadas en el proyecto
 -------------
