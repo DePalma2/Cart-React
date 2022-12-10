@@ -1,4 +1,4 @@
-# Proyecto Integrador React UTN
+# React Cart
 
 ## Detalles
 -------------
